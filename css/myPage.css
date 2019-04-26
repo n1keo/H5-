@@ -1,0 +1,89 @@
+/* 8个背景样式 */
+
+/* 第一屏幕制作 start */
+.section1{
+    background: #fadd67 url(../images/t1fpyqfltdxxaiulhh-990-600.png) no-repeat center bottom;
+}
+.fly{
+    position: absolute;
+    right: 20%;
+    top:10%;
+}
+.shirt01{
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    bottom: 335px;
+}
+.goods{
+    position: absolute;
+    left: 50%;
+    margin-left: -400px;
+    bottom: 150px;
+}
+/* 第一屏幕制作 end */
+.section2 {
+	background: #84a2d4 url(../images/t1zdgpfi8exxca6rfn-2000-600.png) no-repeat center bottom;
+	z-index: 2;
+}
+.section3 {
+	background: #ef674d;
+	z-index: 1;
+}
+.section4 {
+	background: #fed url(../images/t1iresfnxaxxca6rfn-2000-600.png) no-repeat center bottom;
+
+}
+.section5 {
+	background: #d04759 url(../images/t1yisqfa4exxa3gmkg-2000-1500.png);
+	/* overflow: hidden; */
+	perspective: 500;
+	-webkit-perspective: 500;
+	z-index: 1;
+}
+.section6 {
+	background: #84d9ed url(../images/t1dvj.fn0gxxb0_fua-2500-600.png) no-repeat 25% 100%;
+}
+.section7 {
+	background: #8ac060 url(../images/t1wf1tfctaxxa3gmkg-2000-1500.png) no-repeat 50% 100%;
+}
+.section8 {
+	background: url(../images/ksgw.png);
+}
+/* 进入购物中心 */
+.go {
+    position: fixed;
+    /* fixed是通过浏览器窗口进行定位 */
+    top: 5%;
+    right: 5%;
+}
+
+
+
+/* 动画 */
+.updown{
+   animation: fly 2.5s linear infinite;   
+}
+.shirt-updown{
+    animation: shirt01 3s linear infinite;
+}
+@keyframes fly {
+    0%{
+        top:10%;
+    }
+    50%{
+        top:20%;
+    }
+    100%{
+        top:10%;
+    }
+} 
+@keyframes shirt01 {
+    
+    50%{
+        bottom: 360px;
+    }
+    100%{
+        bottom: 335px;
+    }
+}
